@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles/leaderboard.css">
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="container">
+    </div>
+    <button id ="backButton"class="backButton backgroundDiv">
+        Back to Menu
+    </button>
+    <div id="leaderboardsContainer" class="backgroundDiv">
+        <p id="subjectDisplay" class="backgroundDiv">Subject: Your mother</p>
+        <div class="currentUserGridBackground backgroundDiv">
+            <p>your current placement:</p>
+            <div id="currentUserGrid">
+                <div class="backgroundDiv " id="currentUserRank">#</div>
+                <div class="backgroundDiv " id="currentUsername">Username</div>
+                <div class="backgroundDiv " id="currentUserPoints">Points</div>  
+            </div>
+        </div>
+        <div id="leaderboardItems">
+            <div class="backgroundDiv">Rank</div>
+            <div class="backgroundDiv">Username</div>
+            <div class="backgroundDiv">Points</div>
+        </div>
+    </div>
+
+</body>
+<script src="scripts/leaderboard.js" type="module"></script>
+</html>

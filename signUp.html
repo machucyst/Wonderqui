@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/signUpCSS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1">
+    <title>Sign Up</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <img src="styles/images/Haruka.png"alt="Haruka"id="penguin">
+    <img src="styles/images/Wonderhoi.png" alt="Wonderhoi" id="wonda">
+    <div id="cover"></div>
+    <div id="signUp">
+        <div class="submitForm">
+            <h1 class="Title">WONDERQUIZ</h1>
+            <h1>Sign Up to our quiz app!</h1>
+
+            <form id="userCredentials" action="main.html" autocomplete="off">
+
+                <div>
+                    <p class="x">Username</p> 
+                    <input id="usernameTextField" type="text" name="usernameText"placeholder="Type Username Here..." required>
+                </div>
+                <div>
+                    <p class="x">Password</p> 
+                    <input id="passwordTextField" type="password" name="passwordTextField"placeholder="Type Password Here..." required>
+                </div>
+                <div>
+                    <p class="x">Confirm Password</p>
+                    <input id="confirmPasswordTextField" type="password" placeholder="Type Confirm Password Here..." required>
+                    
+                </div>
+                    <p class="x">Code Confirmation</p>
+                <div class="container">
+                    <input maxlength="6" id="codeTextField" type="text" pattern="\d{1,6}" placeholder="Code...">   
+                    <button type="button" id="emailButton">Send Code</button> 
+                </div>
+
+            </form>
+            <button id="submitButton">Sign Up</button>
+            <br>
+            <p id="signUpToggle" >Already have an account? <span id="signInSpan"class="loginSpan">Click Here!</span></p>
+        </div>
+    </div>
+
+    <div id="signIn">
+        <div class="submitFormSignIn">
+            <h1 class="Title">WONDERQUIZ</h1>
+            <h1>Sign In to our quiz app!</h1>
+            
+            <form id="userCredentialsSignIn" action="main.html">
+                <br>
+                <div>
+                    <x>Username</x> <br>
+                    <input id="usernameTextFieldSignIn" type="text" name="usernameText"placeholder="Type Username Here...">
+                </div>
+                <div>
+                    <x>Password</x> <br>
+                    <input id="passwordTextFieldSignIn" type="password" name="passwordTextField"placeholder="Type Password Here...">
+                </div>
+
+            </form>
+            <button id="submitButtonSignIn">Sign In</button>      
+            <!-- iba ng function name dito -->
+            <br>
+            <p id="signInToggle" >Don't have an account yet? <span id="signUpSpan"class="loginSpan">Click Here!</span></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- EMAIL SCRIPT DO NOT FUCK WITH THESE -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+    <script type="text/javascript">
+            (function () {
+            emailjs.init("jlcJvs0IL2_Y4vGbE");
+            })();
+    </script>
+    <script src="scripts/signUpJavaScript.js" type="module"></script>
+    <!-- EMAIL SCRIPT DO NOT FUCK WITH THESE -->
+</body>
+</html>

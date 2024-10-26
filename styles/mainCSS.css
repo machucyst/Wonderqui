@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 20;
+    background: linear-gradient(to right, #4745eba6, #c5e04c);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: white;
+   
+}
+#startButton{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 35vw;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border-width: 0.5vw;
+    font-size: 4vw;
+    font-family: AnimeFont;
+    font-weight: 500;
+    opacity: 0%;
+    margin-left: 0;
+    line-break: normal;
+    text-align: center;
+    line-height: 5vw;
+    overflow: hidden;
+}
+
+#startButton:hover {
+    box-shadow: 30px 30px 75px #00000080;
+    width: 37vw;
+    height: 37vw;
+    font-size: 4.5vw;
+}
+#startButtonTextSpan{
+    text-align: center;
+    line-break: anywhere;
+}
+#startButton:active {
+    width: 40vw;
+    height: 40vw;
+    font-size: 5vw;
+}
+@font-face {
+    font-family: AnimeFont;
+    src: url("fonts/animeace2_reg.ttf");
+}
+
+#shii-chan {
+    user-select: none;
+    transition: .8s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -20%);
+    z-index: -2;
+    height: 200vh;
+}
+
+#ichika {
+    user-select: none;
+    transition: .8s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -20%);
+    z-index: -2;
+    height: 200vh;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2;
+    pointer-events: none;
+}
+#playSelect:hover,#deleteSelect:hover,#leaderboardSelect:hover,#logOutSelect:hover,#helpSelect:hover{
+    box-shadow: 30px 30px 30px #00000080;
+    margin-left: 0;
+    
+}
+.subSelections:hover{
+    box-shadow: 30px 30px 30px #00000080;
+    margin-left: 250px;
+}
+.selections {
+    border-radius: 1vw;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    width: 90vw;
+    height: 10vh;
+    place-items: center;
+    padding: 20px;
+    background-color: 20px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 3.2vw;
+    line-height: 0px;
+    cursor: pointer;
+    user-select: none;
+    font-family: AnimeFont;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.3vw;
+    box-shadow: 0px 0px 0px #00000055;
+    background: #00000050;
+    backdrop-filter: blur(20px);
+}
+.subSelections {
+    transition: 1.4s;
+    margin-top: 1vw;
+    margin-left: 400px;
+    width: 90vw;
+    height: 5vh;
+    place-items: center;
+    padding: 1vw;
+    background-color: 20px;
+    color: white;
+    font-size: 1.5vw;
+    line-height: 0px;
+    cursor: pointer;
+    user-select: none;
+    font-family: AnimeFont;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.25vw;
+    box-shadow: 0px 0px 0px #00000055;
+    background: #00000050;
+    backdrop-filter: blur(20px);
+    border-radius: 0.5vw;
+    margin-bottom: 1vh;
+}
+#selectionsContainer {
+    overflow-y: scroll;
+    max-height: 100vh;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -300%);
+}
+#subSelectionsContainer,#subSelectionsLogOutContainer,#subSelectionsDeleteAccountContainer, #subSelectionsLeaderboardContainer{
+    overflow: hidden;
+    height: 0px;
+    transition: 1s;
+}
+#subSelectionsContainer a:hover{
+    text-decoration: none;
+}
+#subSelectionsContainer a{
+    text-decoration: none;
+}

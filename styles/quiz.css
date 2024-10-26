@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: linear-gradient(100deg, rgba(0,237,161,1) 0%, rgb(153, 137, 85) 40%, #7b6e77 100%);
+    user-select: none;
+}
+.backgroundDiv{
+    background: #00000050;
+    box-shadow: 0px 0px 0px #00000055;
+    place-items: center;
+    backdrop-filter: blur(20px);
+    border-color: white;
+    font-family: AnimeFont;
+    border-radius: 0.5vw;
+    color: white;
+}
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2;
+    position: absolute;
+    pointer-events: none;
+}
+.questionDiv{
+    transition: .5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 50vw;
+    height: 20vw;
+    font-size: 1vw;
+    line-height: 5vh;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    border-style: solid;
+    border-width: 0.3vw;
+    font-weight: 500;
+    margin-left: 0;
+    line-break: normal;
+    text-align: center;
+    letter-spacing: 4px;
+    color:white;
+}
+
+.timerDiv{
+    transition: .5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -695%);
+    width: 50vw;
+    height: 3vw;
+    font-size: 1vw;
+    line-height: 5vh;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5vw;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.3vw;
+    font-weight: 500;
+    margin-left: 0;
+    line-break: normal;
+    text-align: center;
+    letter-spacing: 4px;
+    color:white;
+}
+.Buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 2px;
+    column-gap: 30px;
+}
+.scoreContainer{
+    place-items: center;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.3vw;
+    transition: .5s;
+    font-size: 1vw;
+    width: 16vw;
+    height: 10vh;
+    color: white;
+    line-height: 1vh;
+}
+.scoreContainer #scoreText{
+transition: .5s;
+}
+.Buttons button{
+    border-radius: 0.5vw;
+    margin-bottom: 10px;
+    margin: 20px;
+    width: 25vw;
+    height: 15vh;
+    font-size: 1.5vw;
+    place-items: center;
+    padding: 20px;
+    color: white;
+    overflow: scroll;
+    letter-spacing: 4px;
+    cursor: pointer;
+    user-select: none;
+    font-family: AnimeFont;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.3vw;
+    background: #00000050;  
+    transition: 0.5s;
+    z-index: 2;
+}
+.Buttons button::-webkit-scrollbar {
+  display: none;
+}
+
+.Buttons button:hover {
+    transform: scale(1.1);
+    z-index: 3;
+    border-color: blueviolet !important;
+}
+@font-face {
+    font-family: AnimeFont;
+    src: url("fonts/animeace2_reg.ttf");
+}
+.backButton{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-width: 0.2vw;
+    transform: translate(330%,-490%);
+    font-size: 1.5vw;
+    height: 10vh;
+    cursor: pointer;
+    width: 15vw;
+}
+#Nene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -20%);
+    height: 200vh;
+}
+
+#Ena {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -17%);
+    height: 200vh;
+}

@@ -1,0 +1,104 @@
+body{
+    background:linear-gradient(to right,pink,white);
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+#abc{
+    height: 60vh;
+}
+#buttonCollection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,350%);
+    width: 90vw;
+}
+#buttonCollection button{
+    height: 10vh;
+    font-size: 1vw;
+    padding: 0;
+    margin-left: 2%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.3vw;
+    box-shadow: 0px 0px 0px #00000055;
+    background: #00000050;
+    backdrop-filter: blur(20px);
+    font-family: AnimeFont;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#buttonCollection button:hover{
+    
+    transform: scale(1.1);
+    border-color: blueviolet !important;
+}
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2;
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#textCollection{
+    background-color: yellow;
+    height: 100%;
+    width: 36.5vw;
+    position: relative;
+    left: 2%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.25vw;
+    box-shadow: 0px 0px 0px #00000055;
+    background: #00000050;
+    backdrop-filter: blur(20px);
+    border-radius: 0.5vw;
+    font-family: AnimeFont;
+    text-align: center;
+}
+#test{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,10%); 
+}
+
+#textInstructions{
+    
+    line-height: normal;
+    line-break: auto;
+    
+    color: black;
+    
+    
+}
+@font-face {
+    font-family: AnimeFont;
+    src: url("fonts/animeace2_reg.ttf");
+}
+#abc{
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top: 0%;
+    left: 1%;
+    border-radius: 0.5vw;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.25vw;
+}

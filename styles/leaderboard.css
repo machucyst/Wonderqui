@@ -1,0 +1,123 @@
+body{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgb(237,228,0);
+    height: 100vh;
+    background: linear-gradient(215deg, rgba(237,228,0,1) 0%, rgba(240,255,136,1) 48%, rgba(246,118,16,1) 100%);
+    /* overflow: hidden; */
+    background-size: cover;
+    user-select: none;
+    overflow: hidden;
+}
+
+#leaderboardsContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5vw;
+    font-family: AnimeFont;
+    width: 40vw;
+    font-size: 1vw;
+    height: auto;
+    max-height: 90vh;
+
+    /* overflow-y: scroll; */
+}
+#leaderboardsContainer::-webkit-scrollbar{
+    display: none;
+}
+#leaderboardItems div{
+    height: 3vh;
+}
+#currentUserGrid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: .5vw;
+
+    margin-top: 1vh;
+   
+}
+.currentUserGridBackground{
+    background: #00000080;
+    box-shadow: 0px 0px 0px #00000055;
+    z-index: 0;
+    border-radius: 0.5vw;
+    margin: 0;
+    height: 10vh;
+    width: auto;
+    padding: 2vh;
+    position: sticky;
+    
+    top: 0;
+    padding: 2vh;
+    padding-bottom: 2vh;
+    z-index: 1;
+}
+.backButton{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-width: 0.2vw;
+    transform: translate(330%,-490%);
+    font-size: 1.5vw;
+    height: 10vh;
+    width: 15vw;
+    border: solid;
+    cursor: pointer;
+}
+#currentUserRank,#currentUsername,#currentUserPoints{
+    background-image: linear-gradient(215deg, rgba(237,228,0,1) 0%, 48%, rgba(246,118,16,1) 100%);
+}
+#leaderboardItems{
+ display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: .5vw;
+    margin-top: 3vh;
+    height: auto;
+    max-height: 64vh;
+    overflow:scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.currentUserGridBackground p{
+    margin: 0;
+}
+#leaderboardItems::-webkit-scrollbar{
+    display: none;
+}
+
+.margin {
+    margin-bottom: 2vh;
+}
+.backgroundDiv{
+    background: #00000050;
+    box-shadow: 0px 0px 0px #00000055;
+    backdrop-filter: blur(20px);
+    border-color: white;
+    font-family: AnimeFont;
+    border-radius: 0.5vw;
+    color: white;
+    padding: .5vw;
+    /* height: 3vh; */
+}
+@font-face {
+    font-family: AnimeFont;
+    src: url("fonts/animeace2_reg.ttf");
+}
+
+#subjectDisplay {
+    text-align: center;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2;
+    position: absolute;
+    
+    pointer-events: none;
+}

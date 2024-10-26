@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #0f6ebd, #f36abe);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+.submitForm input{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-anchor: start;
+    height: 7vh;
+    /* margin-bottom: 3vh; */
+    font-size: 1.5vw;
+    width: 30vw;
+    background-color: #ffffff50;
+    border: solid;
+    color: white;
+    border-color: white;
+    border-width: 0.25vw;
+    border-width: 0.2vw;
+    border-radius: 0.3vw;
+    padding-left: 1vw;
+}
+.submitForm{
+    width: 30vw;
+    height: 82vh;
+    padding: 2vw;
+    padding-right: 3vw;
+    border-style: solid;
+    border-radius: 1vw;
+    border-width: 0.3vw;
+    border-color: white;
+    text-align:left;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10vh);
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 31.5vw;
+    height: 7vh;
+}
+/* kaya mo yan koya */
+.submitForm #codeTextField{     
+    flex: 1;
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.submitForm #emailButton{
+    height: 8vh;
+    min-width: 7vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 0.25vw;
+    border-bottom-right-radius: 0.25vw;
+    background-color: #ffffff50;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.25vw;
+}
+#emailButton:hover, #submitButton:hover,#emailButton:focus, #submitButton:focus{        
+    background-color: #ffffff75;
+    cursor:pointer;
+}
+#submitButton{
+    width: 31.5vw;
+    font-size: 4vh;
+    /* margin-top:2vh; */
+    height: 7vh;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25vw;
+    border-width: 0.25vw;
+    background-color: #ffffff50;
+    border-color: white;
+    border-style: solid;
+}
+.submitForm h1{
+    font-size: 2vw;
+}
+.x{
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+#signUp{
+    transition: 2s;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}       
+/* naayos mo na yung tab? */
+#signIn{
+    transition: 2s;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(900%, -50%);
+}
+#wonda {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -25%);
+    height: 200vh;
+    z-index: -1;
+    user-select: none;
+}
+#userCredentials div{
+    padding: 0.001%;
+
+    margin: 0.001%;
+    border-width:0;
+}
+#penguin {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -25%);
+    height: 200vh;
+    user-select: none;
+}
+
+.submitFormSignIn input{
+    display: inline-block;
+    text-anchor: start;
+    height: 4vh;
+    margin-bottom: 2vh;
+    font-size: 1.5vw;
+    width: 30vw;
+    color: white;
+    background-color: #ffffff50;
+    border: solid;
+    border-color: white;
+    border-width: 0.25vw;
+    border-radius: 0.25vw;
+    padding: 1vh;
+}
+#userCredentials div{
+    height: 12vh;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.submitFormSignIn{
+    padding: 2vw;
+    border-style: solid;
+    border-radius: 1vw;
+    border-width: 0.25vw;
+    border-color: white;
+    text-align:left;
+    font-size: 1vw;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10vh);
+}
+.containerSignIn{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.submitFormSignIn #codeTextFieldSignIn{
+    flex: 1;
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.submitFormSignIn #emailButtonSignIn{
+    width: 30%;
+    min-width: 30%;
+    height: 45.3px;
+    
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff50;
+    border-color: white;
+    border-style: solid;
+}
+.submitButtonSignIn{
+    height: 20vh;
+}
+#emailButtonSignIn:hover, #submitButtonSignIn:hover,#emailButtonSignIn:focus, #submitButtonSignIn:focus{
+    background-color: #ffffff70;
+    cursor:pointer;
+}
+#submitButtonSignIn{
+    width: 100%;
+    font-size: 4vw;
+    margin-top:2vh;
+    height: 10vh;
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25vw;
+    background-color: #ffffff50;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.25vw;
+}
+#signUpToggle{
+    color: black;
+    font-size: 1vw;
+}
+
+#signInToggle{
+    color: black;
+}
+.loginSpan:hover, .loginSpan:focus{
+    text-decoration: underline;
+    color:white;
+    cursor:pointer;
+}   
+.Title{
+    font-family: AnimeFont;
+    font-size: 2vw;
+}
+@font-face {
+    font-family: AnimeFont;
+    src: url("fonts/animeace2_reg.ttf");
+}
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 100%;
+    z-index: 2;
+    transition: 1s;
+    pointer-events: none;
+}

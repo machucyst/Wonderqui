@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="Ena" src="styles/images/Ena.png">
+    <img id="Nene" src="styles/images/Nene.png">
+    <div id="cover"></div>   
+    <button id ="backButton"class="backButton backgroundDiv">
+        Back to Menu
+    </button>
+
+    <div class="timerDiv backgroundDiv">
+        <x id="timer">Time Left: 10</x>
+    </div>
+
+    <div class="questionDiv backgroundDiv">
+        <h1 id="questionText">Question</h1>
+    </div>
+
+    <div class="Buttons">
+        <button id="ChoiceA" class="backgroundDiv">A</button>
+        <button id="ChoiceB" class="backgroundDiv">B</button>
+        <button id="ChoiceC" class="backgroundDiv">C</button>
+        <button id="ChoiceD" class="backgroundDiv">D</button>
+    </div>
+
+    <div class="scoreContainer backgroundDiv" id="scoreInfo">
+        <p id="questionIndexText">Question Number: 1</p>
+        <p id="scoreText">Score: 0                  </p>
+        <p id="pointsText">Points : 0               </p>
+    </div>
+
+    <script src="scripts/quiz.js" type="module"></script>
+    
+</body>
+</html>
